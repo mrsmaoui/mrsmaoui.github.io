@@ -75,13 +75,13 @@
   <main id="main">
 
     <!-- ======= Breadcrumbs ======= -->
-    <div class="breadcrumbs d-flex align-items-center" style="background-image: url('assets/img/projects/ulna/Picture10.png');">
+    <div class="breadcrumbs d-flex align-items-center" style="background-image: url('assets/img/projects/spikemutator/cover3.png');">
       <div class="container position-relative d-flex flex-column align-items-center" data-aos="fade">
 
-        <h2>Diabetes Simulator</h2>
+        <h2>Uncovering COVID-19 Mutations</h2>
         <ol>
-          <li><a href="compMed.html">Computational Medicine</a></li>
-          <li>Ulna</li>
+          <li><a href="compMed.html">Bioinformatics</a></li>
+          <li>SpikeMutator</li>
         </ol>
 
       </div>
@@ -98,29 +98,27 @@
             <div class="portfolio-description">
               <h2>About</h2>
               <p>
-                We present in this work a clinically validated cloud-based distributed platform called Ulna that supports the development and comprehensive testing of single and dual-hormone algorithms for type 1 diabetes mellitus (T1DM).
-              </p>
+                The interaction between the receptor-binding domain (RBD) of the SARS-CoV-2 spike glycoprotein and the ACE2 enzyme is believed to be the entry point of the virus into various cells in the body, including the lungs, heart, liver, and kidneys. </p>
 
-              <p>The platform is built on principles of object-oriented design and runs user algorithms in real-time virtual clinical trials utilizing a multi-threaded environment enabled by concurrent execution over a cloud infrastructure. The platform architecture isolates user algorithms located on personal machines from proprietary patient data running on the cloud. Users import a plugin into their algorithms (Matlab, Python, or Java) to connect to the platform. Once connected, users interact with a graphical interface to design experimental protocols for their trials. Protocols include trial duration in days, mealtimes and amounts, variability in mealtimes and amounts, carbohydrate counting errors, snacks, and onboard insulin levels.
-              </p>
+                <p>The current focus of several therapeutic design efforts explores attempts at affecting the binding potential between the two proteins to limit the activity of the virus and disease progression. In this work, we analyze the stability of the spike protein under all possible single-point mutations in the RBD and computationally explore mutations that can affect the binding with the ACE2 enzyme. </p>
 
-              <p>The platform facilitates development by solving the ODE model in the cloud on large CPU-optimized machines, providing a 62% improvement in memory, speed and CPU utilization. Users can easily debug & modify code, test multiple strategies, and generate detailed clinical performance reports. We validated and integrated into the platform a glucoregulatory system of ordinary differential equations (ODEs) parameterized with clinical data to mimic the inter and intra-day variability of glucose responses of 15 T1DM patients.
-              </p>
+                <p>We unravel the mutation landscape of the receptor region and assess the toxicity potential of single and multi-point mutations, generating insights for future vaccine efforts on mutations that might further stabilize the spike protein and increase its infectivity. </p>
 
-              <p>The platform utilizes the validated patient model to conduct virtual clinical trials for the rapid development and testing of closed-loop algorithms for T1DM.
+                <p>We developed a tool, called SpikeMutator, to construct full atomic protein structures of the mutant spike proteins and shared a database of 3800 single-point mutant structures. We analyzed the recent 65,000 reported spike sequences across the globe and observed the emergence of stable multi-point mutant structures. </p>
+
+                <p>Using the landscape, we searched through 7.5 million possible 2-point mutation combinations and report that the (R355D K424E) mutation produces one of the strongest spike proteins that therapeutic efforts should investigate for the sake of developing effective vaccines.
               </p>
               
               <h2><br>Citation</h2>
 
               <p>When citing this tool in any scientific publication please refer to it as:</p>
 
-              <p>Smaoui MR, Rabasa-Lhoret R, Haidar A. <i>Development platform for artificial pancreas algorithms.</i> PLoS One. 2020 Dec 17;15(12):e0243139. doi: 10.1371/journal.pone.0243139. PMID: 33332411; PMCID: PMC7746189.
+              <p>Smaoui, M.R., Yahyaoui, H. <i>Unraveling the stability landscape of mutations in the SARS-CoV-2 receptor-binding domain. Sci Rep 11, 9166 (2021).</i> https://doi.org/10.1038/s41598-021-88696-5
               </p>
 
-              <a href="https://journals.plos.org/plosone/article/authors?id=10.1371/journal.pone.0243139" target="_blank" style="color:var(--color-default)">
-                <p>DOI: 10.1371/journal.pone.0243139</p>
+              <a href="https://doi.org/10.1038/s41598-021-88696-5" target="_blank" style="color:var(--color-default)">
+                <p>https://doi.org/10.1038/s41598-021-88696-5</p>
               </a>
-
               
 
             </div>
@@ -130,11 +128,11 @@
             <div class="portfolio-info">
               <h3>Project information</h3>
               <ul>
-                <li><strong>Category</strong> <span>Comp. Medicine</span></li>
+                <li><strong>Category</strong> <span>Bioinformatics</span></li>
                 <li><strong>Principal Investigator</strong> <span>Dr. Mohamed Smaoui</span></li>
                 <li><strong>Impact Type</strong> <span>Journal Publication</span></li>
-                <li><strong>Project URL</strong> <a href="https://github.com/mrsmaoui/ULNA" target="_blank">Github Repo</a></li>
-                <li><a href="https://github.com/mrsmaoui/ULNA" target="_blank" class="btn-visit align-self-start">Download Ulna</a></li>
+                <li><strong>Project URL</strong> <a href="https://spikemutator.com" target="_blank">Github Repo</a></li>
+                <li><a href="https://github.com/mrsmaoui/SpikeMutator" target="_blank" class="btn-visit align-self-start">Download SpikeMutator</a></li>
               </ul>
             </div>
           </div>
@@ -151,7 +149,7 @@
 
         <div class=" section-header">
           <h2>Software In Action</h2>
-          <p>Take a closer look at our software! Download Ulna to start your journey into creating algorithms for Type 1 Diabetes patients.</p>
+          <p>Take a closer look at what we did with SpikeMutator! You can download all the COVID-19 mutant structures we generated and analyze them further from our repo.</p>
         </div>
 
         <div class="portfolio-isotope" data-portfolio-filter="*" data-portfolio-layout="masonry" data-portfolio-sort="original-order">
@@ -160,137 +158,106 @@
 
             <div class="col-lg-4 col-md-6 portfolio-item filter-remodeling">
               <div class="portfolio-content h-100">
-                <img src="assets/img/projects/ulna/Picture1.png" class="img-fluid" alt="">
+                <img src="assets/img/projects/SpikeMutator/single1.png" class="img-fluid" alt="">
                 <div class="portfolio-info">
-                  <h4>Matlab Plugin</h4>
-                  <p>T1DM closed-loop algorithm written in Matlab code</p>
-                  <a href="assets/img/projects/ulna/Picture1.png" title="Connecting a T1DM closed-loop algorithm written in Matlab code to the Development Platform though the Nexus Communicator Plugin. The Matlab code implements two functions of an interface class to connect to the Platform. The plugin uses the two functions to communicate insulin / glucagon dosages to the Platform and receives glucose responses and meal input. A user launches a shell script to execute the connection protocol to the Platform and run an instance of their Matlab algorithm." data-gallery="portfolio-gallery-remodeling" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <h4>Spike Protomer</h4>
+                  <p>3D Structure of a Spike Protomer</p>
+                  <a href="assets/img/projects/SpikeMutator/single1.png" title="A single protomer spike in a closed conformation containing a receptor-binding domain highlighted in red, an
+N-terminal domain highlighted in blue, a connector domain highlighted in green, and position 614 highlighted
+in yellow" data-gallery="portfolio-gallery-remodeling" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
                 </div>
               </div>
             </div><!-- End Projects Item -->
 
             <div class="col-lg-4 col-md-6 portfolio-item filter-construction">
               <div class="portfolio-content h-100">
-                <img src="assets/img/projects/ulna/Picture2.png" class="img-fluid" alt="">
+                <img src="assets/img/projects/SpikeMutator/trimer.png" class="img-fluid" alt="">
                 <div class="portfolio-info">
-                  <h4>Java Plugin</h4>
-                  <p>T1DM closed-loop algorithm written in Java code</p>
-                  <a href="assets/img/projects/ulna/Picture2.png" title="Connecting a T1DM closed-loop algorithm written in Java code to the Development Platform though the Nexus Communicator Plugin. The Java code implements an interface class to connect to the Platform. The plugin uses the two methods to communicate insulin / glucagon dosages to the Platform and receives glucose responses and meal input. A user imports the NexusCommunicator_JAVA.jar library into their code and automatically connects to the Platform upon running their Java algorithm." data-gallery="portfolio-gallery-construction" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <h4>Spike Trimer</h4>
+                  <p>3D Structure of a Spike Trimer</p>
+                  <a href="assets/img/projects/SpikeMutator/trimer.png" title="Crystal structure of the spike protein trimer (PDB ID: 6VXX) composed of three protomers colored red, blue, and yellow, and are all in a closed conformation. " data-gallery="portfolio-gallery-construction" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
                 </div>
               </div>
             </div><!-- End Projects Item -->
 
             <div class="col-lg-4 col-md-6 portfolio-item filter-repairs">
               <div class="portfolio-content h-100">
-                <img src="assets/img/projects/ulna/Picture3.png" class="img-fluid" alt="">
+                <img src="assets/img/projects/SpikeMutator/landscape.png" class="img-fluid" alt="">
                 <div class="portfolio-info">
-                  <h4>Login Interface</h4>
-                  <p>Desktop login interface for Windows and MacOS</p>
-                  <a href="assets/img/projects/ulna/Picture3.png" title="Desktop login interface to the Development Platform. Current versions of the application run on both Windows and MacOS systems. Algorithm developers can download the application from https://github.com/mrsmaoui/ULNA" data-gallery="portfolio-gallery-repairs" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <h4>Mutation Landscape</h4>
+                  <p>SARS-CoV-2 receptor-binding domain landscape </p>
+                  <a href="assets/img/projects/SpikeMutator/landscape.png" title="Energy values are in kcal/mol. Each x,y coordinate represents a mutation x at a position y. Te z-values are the free energies of the mutated structures. Lower energies (blue) correspond to increased stability" data-gallery="portfolio-gallery-repairs" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
                 </div>
               </div>
             </div><!-- End Projects Item -->
 
             <div class="col-lg-4 col-md-6 portfolio-item filter-construction">
               <div class="portfolio-content h-100">
-                <img src="assets/img/projects/ulna/Picture6.png" class="img-fluid" alt="">
+                <img src="assets/img/projects/SpikeMutator/2D.png" class="img-fluid" alt="">
                 <div class="portfolio-info">
-                  <h4>Performance</h4>
-                  <p>Expected clinical outcomes of a 24-hour CSII treatment emulating the CSII</p>
-                  <a href="assets/img/projects/ulna/Picture6.png" title="Algorithm Performance Report assessing the expected clinical outcomes of a 24-hour CSII treatment emulating the CSII treatment of CLASS03. 15 virtual subjects were given 4 meals over a 24-hour period (8 am to 8 am). The first meal was given at 8 am (median 59 g of carbohydrates, IQR (40-60)), the second meal at noon (70 g, 70-75), the third meal at 5 pm (95 g, 81-100), and a snack at 9 pm (20 g, 20-30). " data-gallery="portfolio-gallery-construction" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <h4>2D Heatmaps</h4>
+                  <p>2D Projection of the RBD Mutation Landscape</p>
+                  <a href="assets/img/projects/SpikeMutator/2D.png" title="The introduction of a C or D mutation throughout most positions of the spike consistently suggests an improvement in the overall stability of the protein. Mutations in positions 355, 357, and 408 strikingly result in stable conformations. Positions 364 and 389 appear to be unstable spike regions. Positions 420, 427, 428, 444, and 465 appear to be unstable spike regions. On the other hand, positions 454, 462, 466, 501, and others colored in blue can exhibit mutations that stabilize the spike protein." data-gallery="portfolio-gallery-construction" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
                 </div>
               </div>
             </div><!-- End Projects Item -->
 
             <div class="col-lg-4 col-md-6 portfolio-item filter-remodeling">
               <div class="portfolio-content h-100">
-                <img src="assets/img/projects/ulna/Picture5.png" class="img-fluid" alt="">
+                <img src="assets/img/projects/SpikeMutator/rmsd.png" class="img-fluid" alt="">
                 <div class="portfolio-info">
-                  <h4>Virtual Patients</h4>
-                  <p>Launching a virtual clinical trial</p>
-                  <a href="assets/img/projects/ulna/Picture5.png" title="Selecting a population of virtual patients. The first step in launching a virtual clinical trial is to select the virtual subjects that will participate in the trial. The current version of the platform includes 15 virtual subjects. Upon addition of more subjects to the platform’s database on the cloud, the panel will automatically show the new patients." data-gallery="portfolio-gallery-remodeling" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <h4>RMSD Plot</h4>
+                  <p>Full 50ns MD Simulation</p>
+                  <a href="assets/img/projects/SpikeMutator/rmsd.png" title="Full 50ns MD Simulation of the non-mutant native spike (blue) and the (R355D K424E) mutant structure (orange). Figure shows the RMSD plot of the MD simulation run." data-gallery="portfolio-gallery-remodeling" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
                 </div>
               </div>
             </div><!-- End Projects Item -->
 
             <div class="col-lg-4 col-md-6 portfolio-item filter-design">
               <div class="portfolio-content h-100">
-                <img src="assets/img/projects/ulna/Picture4.png" class="img-fluid" alt="">
+                <img src="assets/img/projects/SpikeMutator/rmsf.png" class="img-fluid" alt="">
                 <div class="portfolio-info">
-                  <h4>Welcome Screen</h4>
-                  <p>Launching virtual clinical trial</p>
-                  <a href="assets/img/projects/ulna/Picture4.png" title="Development Platform welcome screen. A user can select “Evaluate Your Controller” from the Production panel to launch a virtual clinical trial." data-gallery="portfolio-gallery-book" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <h4>RMSF Plot</h4>
+                  <p>Full 50ns MD Simulation</p>
+                  <a href="assets/img/projects/SpikeMutator/rmsf.png" title="Full 50ns MD Simulation of the non-mutant native spike (blue) and the (R355D K424E) mutant structure (orange). Figure shows the RMSF plot of the MD simulation run." data-gallery="portfolio-gallery-book" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
                 </div>
               </div>
             </div><!-- End Projects Item -->
 
             <div class="col-lg-4 col-md-6 portfolio-item filter-design">
               <div class="portfolio-content h-100">
-                <img src="assets/img/projects/ulna/Picture7.png" class="img-fluid" alt="">
+                <img src="assets/img/projects/SpikeMutator/superimposed_native.png" class="img-fluid" alt="">
                 <div class="portfolio-info">
-                  <h4>Patient-13</h4>
-                  <p>Response graph during CSII treatment</p>
-                  <a href="assets/img/projects/ulna/Picture7.png" title="Virtual Patient-13 response graph during the CSII treatment" data-gallery="portfolio-gallery-book" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <h4>Non-mutant analysis</h4>
+                  <p>Superimposing non-mutant structure at time 50ns on starting confirmation</p>
+                  <a href="assets/img/projects/SpikeMutator/superimposed_native.png" title="Full 50ns MD Simulation of the non-mutant native spike (blue) and the (R355D K424E) mutant structure (orange). Figure displays the superimposing of the non-mutant structure at time 50ns (blue) on the native structure at time 0ns (gray)." data-gallery="portfolio-gallery-book" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
                 </div>
               </div>
             </div><!-- End Projects Item -->
 
             <div class="col-lg-4 col-md-6 portfolio-item filter-remodeling">
               <div class="portfolio-content h-100">
-                <img src="assets/img/projects/ulna/Picture8.png" class="img-fluid" alt="">
+                <img src="assets/img/projects/SpikeMutator/superimposed_mutant.png" class="img-fluid" alt="">
                 <div class="portfolio-info">
-                  <h4>Patient-13</h4>
-                  <p>Response graph during single-hormone treatment</p>
-                  <a href="assets/img/projects/ulna/Picture8.png" title="Virtual Patient-13 response graph during the single-hormone treatment" data-gallery="portfolio-gallery-remodeling" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <h4>Mutant analysis</h4>
+                  <p>Superimposing mutant structure at time 50ns on starting confirmation</p>
+                  <a href="assets/img/projects/SpikeMutator/superimposed_mutant.png" title="Full 50ns MD Simulation of the non-mutant native spike (blue) and the (R355D K424E) mutant structure (orange). Figure displays the superimposing of the 2-point mutant structure at time 50ns on its starting conformation at time 0ns (gray)" data-gallery="portfolio-gallery-remodeling" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
                 </div>
               </div>
             </div><!-- End Projects Item -->
 
             <div class="col-lg-4 col-md-6 portfolio-item filter-design">
               <div class="portfolio-content h-100">
-                <img src="assets/img/projects/ulna/Picture10.png" class="img-fluid" alt="">
+                <img src="assets/img/projects/SpikeMutator/contact_map.png" class="img-fluid" alt="">
                 <div class="portfolio-info">
-                  <h4>Patient-13</h4>
-                  <p>Response graph during dual-hormone treatment</p>
-                  <a href="assets/img/projects/ulna/Picture10.png" title="Virtual Patient-13 response graph during the dual-hormone treatment" data-gallery="portfolio-gallery-book" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <h4>Contact Map</h4>
+                  <p>Residue contact map of the native and top mutant (R355D K424E) structures</p>
+                  <a href="assets/img/projects/SpikeMutator/contact_map.png" title="Residue contact map of the native and top mutant (R355D K424E) structures at t=0ns and t=50ns spanning the RBD region. The blue contacts represent conserved contacts between time t=0ns and t=50ns. The green contacts represent contacts that have been lost during the MD run. The red dots represent new contacts that have been formed during the simulation run. Results were generated using the following GO parameters: Sequence distance = 4, Cutoff long = 1.1nm, and Cutoff short = 0.3nm" data-gallery="portfolio-gallery-book" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
                 </div>
               </div>
             </div><!-- End Projects Item -->
 
-            <div class="col-lg-4 col-md-6 portfolio-item filter-construction">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/projects/ulna/Picture12.png" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>Integration</h4>
-                  <p>Client algorithm integration into the simulation environment</p>
-                  <a href="assets/img/projects/ulna/Picture12.png" title="The Client Machine contains an Application and Client Code components. The Nexus Communicator is a plugin that a user can install to their controller algorithm and provides a communication interface protocol with the simulation environment" data-gallery="portfolio-gallery-construction" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                </div>
-              </div>
-            </div><!-- End Projects Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item filter-remodeling">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/projects/ulna/Picture11.png" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>Infrastructure</h4>
-                  <p>Development Platform Infrastructure</p>
-                  <a href="assets/img/projects/ulna/Picture11.png" title="The control algorithm, GUI, and system engine reside in a Client machine. The Client machine communicates with the glucoregulatory model computed concurrently across several Web Servers" data-gallery="portfolio-gallery-remodeling" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                </div>
-              </div>
-            </div><!-- End Projects Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item filter-construction">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/projects/ulna/Picture9.png" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>Clinical Outcomes</h4>
-                  <p>Algorithm Performance Report assessing the expected clinical outcomes</p>
-                  <a href="assets/img/projects/ulna/Picture9.png" title="Algorithm Performance Report assessing the expected clinical outcomes of a 24-hour dual-hormone treatment emulating the dual-hormone treatment of CLASS03. 15 virtual subjects were given 4 meals over a 24-hour period (8 am to 8 am). The first meal was given at 8 am (median 59 g of carbohydrates, IQR (40-60)), the second meal at noon (70 g, 70-75), the third meal at 5 pm (95 g, 81-100), and a snack at 9 pm (20 g, 20-30). " data-gallery="portfolio-gallery-construction" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                </div>
-              </div>
-            </div><!-- End Projects Item -->
             
-
           </div><!-- End Projects Container -->
 
         </div>
