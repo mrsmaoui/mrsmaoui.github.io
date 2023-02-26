@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Fingerprint Authentication</title>
+  </head>
+  <body>
+    <button onclick="authenticate()">Authenticate</button>
+    <script>
+      async function authenticate() {
+        try {
+          const publicKey = {
+            challenge: new Uint8Array(32), // generate random challenge
+            rp: {
+              name: "Example App"
+            },
+            user: {
+              id: new Uint8Array(16), // set user ID
+              name: "user@example.com",
+              displayName: "User"
+            },
+            pubKeyCredParams: [
+              {
+                type: "public-key",
+                alg: -7 // "ES256" IANA COSE Algorithms registry
+              }
+            ],
+            authenticatorSelection: {
+              userVerification: "required"
+            },
+            timeout: 60000,
+            attestation: "direct"
+          };
+          const credentials = await navigator.credentials.get({
+            publicKey: publicKey
+          });
+          console.log(credentials);
+          alert("Authentication successful!");
+        } catch (error) {
+          console.error("Authentication failed: " + error);
+          alert("Authentication failed: " + error);
+        }
+      }
+    </script>
+  </body>
+</html>
